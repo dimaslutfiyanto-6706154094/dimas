@@ -24,18 +24,16 @@ public class Jurnal1 {
         int n = show.nextInt();
         long fib[] = new long[n];
         
-        int i = 1;
+        int jumlah = 1;
         fib[0] = 0;
         fib[1] = 1;
          
-        for( i = 2; i < n; i++) {
+        for( int i = 2; i < n; i++) {
             fib[i] = fib[i-1] + fib[i-2];
+            jumlah+=fib[i];
         }
-         
-        for ( i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
-        }
-        
+                
+         System.out.print(jumlah + " ");
     }
     
 }
