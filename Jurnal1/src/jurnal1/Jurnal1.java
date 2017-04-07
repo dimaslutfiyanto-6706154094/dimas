@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jurnal1;
+package jurnal;
 
 import java.util.Scanner;
 
@@ -11,12 +11,8 @@ import java.util.Scanner;
  *
  * @author Praktikan
  */
-public class Jurnal1 {
-
-    /**
-     * @param args the command line arguments
-     */
-     private int[] a;
+public class jurnal {
+    private int[] a;
 
     private int fib(int i) {
         assert (i>=0);
@@ -32,7 +28,7 @@ public class Jurnal1 {
         return a[i];
     }
 
-    public Jurnal1(int numberTerms) {
+    public jurnal(int numberTerms) {
         if (numberTerms<2) throw new IllegalArgumentException("expect at least 2 terms for a Fibonacci sequence");
         a = new int[numberTerms];
     }
@@ -42,12 +38,9 @@ public class Jurnal1 {
             System.out.println(fib(i-1));
         }
     }
-    
+
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        Jurnal1 f = new Jurnal1(10);
-        f.print();        
+        jurnal f = new jurnal(7);
+        f.print();
     }
-    
 }
